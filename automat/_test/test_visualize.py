@@ -134,6 +134,7 @@ def isLeaf(element):
 
 
 @skipIf(not isGraphvizModuleInstalled(), "Graphviz module is not installed.")
+@skipIf(not isTwistedInstalled(), "Twisted is not installed.")
 class TableMakerTests(TestCase):
     """
     Tests that ensure L{tableMaker} generates HTML tables usable as
